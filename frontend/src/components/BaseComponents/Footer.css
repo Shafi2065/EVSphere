@@ -1,0 +1,16 @@
+footer {
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid rgb(101, 238, 134);
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+  color: black;
+  padding: 10px; 
+}

@@ -1,0 +1,149 @@
+.login-page-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(240, 244, 248);
+    height: 100vh;
+}
+
+.login-logo-container {
+    margin-bottom: 10px;
+}
+
+.login-logo-container img {
+    height: 70px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 185, 204);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.new-user-option-container{
+    font-size: 18px;
+}
+
+.login-options-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.email-login-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #666;
+}
+
+.forgot-password-link {
+    color: black;
+    cursor: pointer;
+
+}
+
+.login-button {
+    background-color: rgb(15, 129, 143);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: rgb(11, 92, 102);
+}
+
+.separator {
+    width: 1px;
+    background-color: #8898AA;
+    margin: 0 20px; 
+}
+
+.social-login-section{
+    flex: 1;
+    padding: 0 20px;
+}
+
+.social-login-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 244, 248);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.social-button:hover {
+    transform: translateY(-3%);
+}
+
+.social-icon {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.popup {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    padding: 8px 12px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeOut 3s forwards;
+    z-index: 1000;
+    font-size: 14px;
+}
+
+.popup-error {
+    background-color: #f44336;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
